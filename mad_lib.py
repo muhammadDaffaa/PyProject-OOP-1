@@ -3,6 +3,14 @@ def get_input(getInput: str):
     return user_input
 
 
-verb1 = get_input("trial-1")
+# Input String
+input1 = get_input("Your Input-1 : ")
+input2 = get_input("Your Input-2 : ")
 
-# print(verb1)
+result = f"""
+These are your
+Input 1 is {input1}
+Input 2 is {input2}
+"""
+
+print(result)
