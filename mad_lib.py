@@ -1,5 +1,3 @@
-import time
-
 class MadLib:
     def __init__(self):
         self.__data_input = '' #Private attribute
@@ -11,8 +9,8 @@ class MadLib:
 
     def get_print(self:str):
         result = f"""
-        These are your
-        Input 1 is {self.__data_input}
+        This is your
+        Input {self.__data_input}
         """
         print(result)
         # return result
