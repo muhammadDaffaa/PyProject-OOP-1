@@ -18,7 +18,9 @@ def my_number_guess_game():
 
     test1.set_lower_num()
     test1.set_higher_number()
-
+    test1.set_random_number()
+    test1.get_random_number()
+    test1.get_print()
 
 
 if __name__ == '__main__':
