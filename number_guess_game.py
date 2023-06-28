@@ -1,7 +1,8 @@
 from random import randint
 
-class NumberGuess:
 
+class NumberGuess:
+    # Constructor
     def __init__(self):
         self.__enter_lower_num = 0
         self.__enter_higher_num = 0
@@ -28,23 +29,23 @@ class NumberGuess:
     def get_random_number(self):
         return self.__random_number
 
-    def number_time_guess(self):
+    def get_number_time_guess(self):
         return self.__number_guess
 
     def get_print(self):
         print(f"Guess the number in the range from {self.__enter_lower_num} to {self.__enter_higher_num}")
-        while True :
+        while True:
             try:
-               self.__user_number_guess:int = int(input(f"Input your number : "))
+                self.__user_number_guess: int = int(input(f"Input your number : "))
             except ValueError as e:
                 print("Please correct the input")
                 continue
 
-            self.__number_guess +=1
+            self.__number_guess += 1
 
-            if self.__number_guess == 1 :
+            if self.__number_guess == 1:
                 print(f"You have guess in {self.__number_guess} time !!! ")
-            else :
+            else:
                 print(f"You have guess in {self.__number_guess} times !!! ")
 
             if self.__user_number_guess > self.__random_number:
@@ -54,7 +55,3 @@ class NumberGuess:
             else:
                 print("Congrats, Your guess is correct !!")
                 break
-
-
-
-

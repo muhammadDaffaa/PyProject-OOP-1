@@ -1,6 +1,8 @@
 # Import Class from different file
 from mad_lib import MadLib
 from number_guess_game import NumberGuess
+from dice_simulator import DiceSimulator
+
 
 # Call Class
 def my_madlib():
@@ -12,8 +14,8 @@ def my_madlib():
     input1.get_print()
     input2.get_print()
 
-def my_number_guess_game():
 
+def my_number_guess_game():
     test1 = NumberGuess()
 
     test1.set_lower_num()
@@ -23,7 +25,14 @@ def my_number_guess_game():
     test1.get_print()
 
 
+def my_dice_simulator():
+    test1 = DiceSimulator()
+
+    test1.set_process_roll_dice()
+
+
 if __name__ == '__main__':
-    # Change the name of function that you want to run
+    # Change the name of function. If you want to run it
     # my_madlib()  # 1
-    my_number_guess_game() #2
+    # my_number_guess_game()  # 2
+    my_dice_simulator()  # 3

@@ -1,4 +1,5 @@
 class MadLib:
+    # Constructor
     def __init__(self):
         self.__data_input = '' #Private attribute
 
