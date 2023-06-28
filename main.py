@@ -1,7 +1,6 @@
-# Import Class from different file
-# from mad_lib import MadLib
-# from number_guess_game import NumberGuess
-# from  S import DiceSimulator
+from First.mad_lib import MadLib
+from First.dice_simulator import DiceSimulator
+from First.number_guess_game import NumberGuess
 
 
 # Call Class
