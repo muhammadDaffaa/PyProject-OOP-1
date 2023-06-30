@@ -19,7 +19,7 @@ class DiceSimulator:
 
         return self.__temp_list
 
-    def get_roll_dice(self) -> list[int]:
+    def get_roll_dice(self) -> 'list[int]':
         return print(self.__temp_list)
 
     def set_process_roll_dice(self):
