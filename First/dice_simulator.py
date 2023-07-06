@@ -1,6 +1,5 @@
 import random
 
-
 class DiceSimulator:
 
     # Constructor
@@ -9,7 +8,6 @@ class DiceSimulator:
         self.__user_input = ''
 
     def set_roll_dice(self, amount):
-        pass
         if amount <= 0:
             raise ValueError
         self.__temp_list = []
@@ -23,7 +21,6 @@ class DiceSimulator:
         return print(self.__temp_list)
 
     def set_process_roll_dice(self):
-        pass
         while True:
             try:
                 self.__user_input: str = input('How many dice would you like to troll ?')

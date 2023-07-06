@@ -1,6 +1,5 @@
 from random import randint
 
-
 class NumberGuess:
     # Constructor
     def __init__(self):
