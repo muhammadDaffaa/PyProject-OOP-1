@@ -3,6 +3,7 @@ from First.dice_simulator import DiceSimulator
 from First.number_guess_game import NumberGuess
 from First.hangman import Hangman
 
+
 # Call Class
 def my_madlib():
     input1 = MadLib()
@@ -28,12 +29,15 @@ def my_dice_simulator():
 
 
 def my_hangman():
-    pass
+    test1 = Hangman()
+
+    test1.get_REQ()
+    test1.run_game()
 
 
-if __name__ == '__main__':
-    # Change the name of function. If you want to run it
+if __name__ == "__main__":
+    #! Change the name of function. If you want to run it
     # my_madlib()  # 1
     # my_number_guess_game()  # 2
-    #my_dice_simulator()  # 3
-    my_hangman() #4
+    # my_dice_simulator()  # 3
+    my_hangman()  # 4
