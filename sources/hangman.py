@@ -10,8 +10,8 @@ class Hangman:
             "X-RapidAPI-Host": "city-and-state-search-api.p.rapidapi.com",
         }
         self.__temp_country = []
-        self.__level_game = {"easy": 5, "medium": 3, "hard": 1}
-        self.__guessed = ""
+        self.__level_game = {"Easy": 5, "Medium": 3, "Hard": 1}
+        self.guessed = ""
 
     # Will be return list
     def get_REQ(self) -> "list[str]":
@@ -26,5 +26,14 @@ class Hangman:
         self.word = choice(self.__temp_country)
 
         username: str = input("What is your name >> ")
-        print(f"Welcome to the game {username} !")
-        print(len(self.__temp_country))
+        print(f"Welcome to the game, {username} !")
+        print("\n")
+
+        print(f"Choose your level ! with range from 1 to {len(self.__level_game)}")
+        for index, (key) in enumerate(self.__level_game.keys()):
+            print(f"{index+1}. {key}")
+
+        choosed = input("Your choice >> ")
+
+        for index, value in enumerate(self.__level_game.values()):
+            pass

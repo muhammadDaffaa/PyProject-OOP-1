@@ -1,7 +1,7 @@
-from First.mad_lib import MadLib
-from First.dice_simulator import DiceSimulator
-from First.number_guess_game import NumberGuess
-from First.hangman import Hangman
+from sources.mad_lib import MadLib
+from sources.dice_simulator import DiceSimulator
+from sources.number_guess_game import NumberGuess
+from sources.hangman import Hangman
 
 
 # Call Class
