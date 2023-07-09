@@ -33,7 +33,45 @@ class Hangman:
         for index, (key) in enumerate(self.__level_game.keys()):
             print(f"{index+1}. {key}")
 
-        choosed = input("Your choice >> ")
+        choosed = int(input("Your choice >> "))
 
-        for index, value in enumerate(self.__level_game.values()):
-            pass
+        while choosed < 1 or choosed > len(self.__level_game):
+            choosed = int(input("Your choice >> "))
+
+        # get value from dictionary with condition
+        key, tries = list(self.__level_game.items())[choosed - 1]
+
+        print(tries)
+        while tries > 0:
+            blanks: int = 0
+
+            print("Country: ", end="\n")
+
+            for c in self.word:
+                if c in self.guessed:
+                    print(c, end="")
+                else:
+                    print("_", end="")
+                    blanks += 1
+            print()  # Add a blank line
+
+            if blanks == 0:
+                print("NICE, You got it !!!!")
+                break
+
+            guess: str = input("Enter a letter : ")
+
+            if guess in self.guessed:
+                print(f'You already used: "{guess}". Please try with another letter')
+                continue
+
+            self.guessed += guess
+
+            if guess not in self.word:
+                tries -= 1
+                print(f"Sorry, That was wrong... ({tries} tries remaining) ")
+
+                if tries == 0:
+                    print(f"The country is {self.word}")
+                    print("Sorry, you are loser !")
+                    break
