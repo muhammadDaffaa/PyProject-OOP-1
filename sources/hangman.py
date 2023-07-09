@@ -45,13 +45,13 @@ class Hangman:
         while tries > 0:
             blanks: int = 0
 
-            print("Country: ", end="\n")
+            print("Country: ", end=" ")
 
             for c in self.word:
                 if c in self.guessed:
-                    print(c, end="")
+                    print(c, end=" ")
                 else:
-                    print("_", end="")
+                    print("_", end=" ")
                     blanks += 1
             print()  # Add a blank line
 
