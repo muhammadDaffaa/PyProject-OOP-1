@@ -2,6 +2,7 @@ from sources.mad_lib import MadLib
 from sources.dice_simulator import DiceSimulator
 from sources.number_guess_game import NumberGuess
 from sources.hangman import Hangman
+from sources.rock_paper_cutter import Hompimpa
 
 
 # Call Class
@@ -33,6 +34,10 @@ def my_hangman():
 
     test1.get_REQ()
     test1.run_game()
+
+
+def my_rpc():
+    pass
 
 
 if __name__ == "__main__":
